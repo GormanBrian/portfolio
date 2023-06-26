@@ -1,6 +1,36 @@
 /* TODO: add global styles */
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 /* TODO: add header styles */
+
+header {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+}
+
+header > div {
+  position: relative;
+  left: 1.5rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: start;
+  align-items: center;
+}
+
+header > a {
+}
+
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  text-align: center;
+  margin: auto;
+}
 
 /* TODO: add about me styles */
 
