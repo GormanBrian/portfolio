@@ -1,5 +1,13 @@
 /* TODO: add global styles */
 
+:root {
+  --primary: rgba(68, 88, 119, 1);
+  --secondary: rgba(146, 204, 206, 1);
+  --tertiary: rgba(49, 52, 61, 1);
+  --dark: rgba(28, 29, 33, 1);
+  --light: rgba(238, 238, 247, 1);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,38 +21,45 @@ ul {
 
 header {
   display: flex;
-  flex-direction: row;
-  height: 100px;
-}
-
-header > div {
   position: relative;
-  left: 1.5rem;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: start;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
+  height: 100px;
+  width: 100%;
 }
 
-header > a {
+header > h1 {
+  text-align: right;
+  padding: 10px 10px 10px 60px;
+  background-color: aquamarine;
+}
+
+header a {
+  padding: 5px 20px;
+  border-bottom: 3px solid var(--secondary);
 }
 
 nav {
   display: flex;
-  flex-flow: row nowrap;
-  text-align: center;
-  margin: auto;
+  flex-direction: "row";
+  justify-content: flex-end;
+  align-items: center;
 }
 
 section {
   display: flex;
+  height: 500px;
+  margin: 40px 0;
 }
 
 section > h2 {
   text-align: right;
   border-right: 3px solid black;
   font-size: 3em;
-  width: 15%;
+  flex: 0 0 20%;
+  min-width: 20%;
+  max-width: 20%;
   padding-right: 2%;
 }
 
