@@ -90,7 +90,11 @@ section > h2 {
   flex-basis: auto;
 }
 
-/* TODO: add footer styles */
-
 #first-example {
+}
+
+.example {
+}
+
+.example-border {
 }
