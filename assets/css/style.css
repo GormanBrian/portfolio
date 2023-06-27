@@ -40,9 +40,9 @@ header a {
   border-bottom: 3px solid var(--secondary);
 }
 
-nav {
+nav > ul {
   display: flex;
-  flex-direction: "row";
+  flex-direction: row;
   justify-content: flex-end;
   align-items: center;
 }
@@ -67,6 +67,10 @@ section > h2 {
   width: 80%;
 }
 
+#hero-image {
+  background-image: url();
+}
+
 /* TODO: add about me styles */
 
 /* TODO: add projects styles */
@@ -87,3 +91,6 @@ section > h2 {
 }
 
 /* TODO: add footer styles */
+
+#first-example {
+}
