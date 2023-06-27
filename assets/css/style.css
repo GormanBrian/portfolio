@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+ul {
+  list-style: none;
+}
+
 /* TODO: add header styles */
 
 header {
@@ -32,36 +36,39 @@ nav {
   margin: auto;
 }
 
-/* TODO: add about me styles */
-
-#contact-me > div {
+section {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  align-items: center;
-  height: 4rem;
-  width: 100%;
 }
 
-#contact-me a {
-  font-weight: bold;
+section > h2 {
+  text-align: right;
+  border-right: 3px solid black;
+  font-size: 3em;
+  width: 15%;
+  padding-right: 2%;
 }
+
+.section-content {
+  width: 80%;
+}
+
+/* TODO: add about me styles */
 
 /* TODO: add projects styles */
 
 /* TODO: add contact styles */
 
-#contact-me > div {
+footer div {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
   height: 4rem;
-  width: 100%;
 }
 
-#contact-me a {
+footer a {
   font-weight: bold;
+  flex-basis: auto;
 }
 
 /* TODO: add footer styles */
