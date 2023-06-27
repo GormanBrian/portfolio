@@ -36,4 +36,19 @@ nav {
 
 /* TODO: add projects styles */
 
+/* TODO: add contact styles */
+
+#contact-me > div {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 4rem;
+  width: 100%;
+}
+
+#contact-me a {
+  font-weight: bold;
+}
+
 /* TODO: add footer styles */
