@@ -14,48 +14,59 @@
 }
 
 ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   list-style: none;
+}
+
+ul a {
+  flex-basis: auto;
+}
+
+img {
+  max-width: 100%;
 }
 
 /* TODO: add header styles */
 
 header {
   display: flex;
-  position: relative;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
+  height: auto;
   width: 100%;
+  padding: 20px 0;
+  background-color: var(--tertiary);
 }
 
 header > h1 {
   text-align: right;
   padding: 10px 10px 10px 60px;
-  background-color: aquamarine;
-}
-
-header a {
-  padding: 5px 20px;
-  border-bottom: 3px solid var(--secondary);
+  background-color: var(--secondary);
 }
 
 nav > ul {
-  display: flex;
-  flex-direction: row;
   justify-content: flex-end;
-  align-items: center;
+}
+
+nav a {
+  padding: 5px 20px;
+  color: var(--secondary);
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 section {
   display: flex;
-  height: 500px;
   margin: 40px 0;
 }
 
 section > h2 {
   text-align: right;
-  border-right: 3px solid black;
+  border-right: 3px solid var(--primary);
+  color: var(--primary);
   font-size: 3em;
   flex: 0 0 20%;
   min-width: 20%;
@@ -65,6 +76,7 @@ section > h2 {
 
 .section-content {
   width: 80%;
+  padding: 5px 2%;
 }
 
 #hero-image {
@@ -77,24 +89,30 @@ section > h2 {
 
 /* TODO: add contact styles */
 
-#contact-me div {
-  display: flex;
-  flex-flow: row nowrap;
+#contact-me ul {
   justify-content: space-around;
-  align-items: center;
   height: 4rem;
 }
 
 #contact-me a {
   font-weight: bold;
-  flex-basis: auto;
+  color: var(--tertiary);
+  text-decoration-color: var(--primary);
 }
 
 #first-example {
 }
 
 .example {
+  width: 35%;
+  height: auto;
+}
+
+.example img {
+  width: 100%;
+  height: auto;
 }
 
 .example-border {
+  border: 3px solid var(--secondary);
 }
