@@ -13,6 +13,10 @@
   padding: 0;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 ul {
   display: flex;
   flex-direction: row;
@@ -60,29 +64,6 @@ nav a {
   font-size: 1.5rem;
 }
 
-/* Section Styles */
-
-section {
-  display: flex;
-  margin: 40px 0;
-}
-
-section > h2 {
-  text-align: right;
-  border-right: 3px solid var(--primary);
-  color: var(--primary);
-  font-size: 3em;
-  flex: 0 0 20%;
-  min-width: 20%;
-  max-width: 20%;
-  padding-right: 2%;
-}
-
-.section-content {
-  width: 80%;
-  padding: 5px 2%;
-}
-
 /* Hero Image Styles */
 
 #hero-image {
@@ -108,8 +89,32 @@ section > h2 {
   position: absolute;
   bottom: 20px;
   right: 50px;
+  padding: 5px 10px;
   font-size: 2rem;
   background-color: var(--secondary);
+}
+
+/* Section Styles */
+
+section {
+  display: flex;
+  margin: 40px 0;
+}
+
+section > h2 {
+  text-align: right;
+  border-right: 3px solid var(--primary);
+  color: var(--primary);
+  font-size: 3em;
+  flex: 0 0 20%;
+  min-width: 20%;
+  max-width: 20%;
+  padding-right: 2%;
+}
+
+.section-content {
+  width: 80%;
+  padding: 5px 2%;
 }
 
 /* TODO: add about me styles */
