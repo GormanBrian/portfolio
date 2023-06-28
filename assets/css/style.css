@@ -2,7 +2,6 @@
 
 :root {
   --primary: rgb(68, 88, 119);
-  --primary-tint: rgba(68, 88, 119, 0.35);
   --secondary: rgb(146, 204, 206);
   --tertiary: rgb(49, 52, 61);
   --dark: rgb(28, 29, 33);
@@ -89,11 +88,20 @@ section > h2 {
 #hero-image {
   width: 100%;
   height: 200px;
-  background: linear-gradient(var(--primary-tint), var(--primary-tint)),
-    url(../images/02-hero-bg.jpg);
+  background-image: url(../images/02-hero-bg.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
+}
+
+#hero-image::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background-color: var(--primary);
+  opacity: 0.35;
 }
 
 #hero-image h2 {
@@ -101,6 +109,7 @@ section > h2 {
   bottom: 20px;
   right: 50px;
   font-size: 2rem;
+  background-color: var(--secondary);
 }
 
 /* TODO: add about me styles */
