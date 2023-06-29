@@ -18,4 +18,4 @@ Visit the live site [here](https://gormanbrian.github.io/portfolio)
 
 ---
 
-![Screenshot of porfolio website](./assets/images/portfolio-website.png)
+![Screenshot of porfolio website](./assets/images/screenshot.png)
