@@ -33,6 +33,16 @@ a {
   text-decoration: none;
 }
 
+.secondary-background,
+#work-examples div {
+  background-color: var(--secondary);
+}
+
+section > h2,
+#about-me p {
+  color: var(--primary);
+}
+
 /* Header Styles */
 
 header {
@@ -49,8 +59,6 @@ header {
 h1 {
   text-align: right;
   padding: 10px 10px 10px 60px;
-  background-color: var(--secondary);
-  color: var(--tertiary);
 }
 
 /* Nav Styles */
@@ -103,7 +111,6 @@ nav a {
   right: 40px;
   padding: 5px 10px;
   font-size: 2rem;
-  background-color: var(--secondary);
 }
 
 /* Section Styles */
@@ -116,7 +123,6 @@ section {
 section > h2 {
   text-align: right;
   border-right: 3px solid var(--primary);
-  color: var(--primary);
   font-size: 3em;
   flex: 0 0 20%;
   min-width: 20%;
@@ -126,13 +132,19 @@ section > h2 {
 
 .section-content {
   width: 80%;
-  padding: 5px 10px;
+  min-height: 100%;
+  padding: 5px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 /* About Me Styles */
 
 #about-me p {
-  margin: 0px 1rem;
+  width: 90%;
+  text-align: left;
+  margin: 0 auto;
 }
 
 /* Work Examples Styles */
@@ -141,13 +153,15 @@ section > h2 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 100%;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 90%;
 }
 
 #work-examples > a {
   border: 6px solid var(--secondary);
   position: relative;
+  overflow: hidden;
 }
 
 #work-examples > a:hover::before {
@@ -161,10 +175,11 @@ section > h2 {
 }
 
 #work-examples img {
-  width: 100%;
-  height: 100%;
+  width: 125%;
+  height: 125%;
   left: 0px;
-  right: 0px;
+  top: 0px;
+  object-fit: cover;
 }
 
 #work-examples div {
@@ -172,40 +187,49 @@ section > h2 {
   bottom: 5%;
   left: 0;
   padding: 5px 10px;
-  background-color: var(--secondary);
+  color: var(--dark);
+}
+
+#work-examples h3 {
+  font-size: 1.25rem;
+  margin-bottom: 5px;
+}
+
+#work-examples p {
+  font-size: 0.75rem;
+  font-weight: 600;
 }
 
 #first-example {
-  flex: 0 0 90%;
-  min-width: 90%;
-  max-width: 90%;
-  height: auto;
+  flex: 0 0 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: 300px;
 }
 
-.example {
-  flex: 0 0 40%;
-  min-width: 40%;
-  max-width: 40%;
-  margin: 20px auto;
-  height: auto;
+.small-example {
+  flex: 0 0 48%;
+  min-width: 48%;
+  max-width: 48%;
+  height: 150px;
 }
 
 /* Contact Me Styles */
 
 #contact-me ul {
   justify-content: space-around;
-  height: 4rem;
+  /* height: 4rem; */
 }
 
 #contact-me a {
   font-weight: bold;
-  font-size: 1.7em;
+  font-size: 1.4em;
   border-color: var(--primary);
-  padding: 4px;
+  padding: 0 0.25rem 0.25rem 0.25rem;
+  margin: auto 0;
 }
 
-#hero-image h2,
-#contact-me a {
+.tertiary-text-color {
   color: var(--tertiary);
 }
 
@@ -229,20 +253,27 @@ section > h2 {
     flex-direction: column;
     justify-content: center;
     align-items: space-evenly;
+    gap: 1rem;
   }
+
+  header h1 {
+    padding: 1rem 60px;
+    text-align: center;
+  }
+
   #contact-me ul {
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 1rem;
     height: auto;
   }
 
-  .example {
-    flex: 0 0 90%;
-    min-width: 90%;
-    max-width: 90%;
+  .small-example {
+    flex: 0 0 100%;
+    min-width: 100%;
+    max-width: 100%;
   }
 
   section > h2 {
-    font-size: 1.75rem;
+    font-size: 1.4rem;
   }
 }

@@ -9,7 +9,7 @@
   </head>
   <body>
     <header>
-      <h1>Brian Gorman</h1>
+      <h1 class="secondary-background tertiary-text-color">Brian Gorman</h1>
       <nav>
         <ul>
           <li><a href="#about-me">About Me</a></li>
@@ -26,97 +26,123 @@
         id="hero-image"
       >
         <img src="./assets/images/Profile Picture.jpg" alt="Me" />
-        <h2 role="presentation">Cool subtitle here!</h2>
+        <h2
+          class="secondary-background tertiary-text-color"
+          role="presentation"
+        >
+          Cool subtitle here!
+        </h2>
       </div>
       <!-- ************************* ABOUT ME SECTION ************************* -->
       <section id="about-me">
         <h2>About<br />Me</h2>
-        <p class="section-content">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing
-          bibendum est ultricies integer quis auctor elit. Rhoncus dolor purus
-          non enim praesent. Vestibulum lectus mauris ultrices eros in cursus
-          turpis massa. Egestas egestas fringilla phasellus faucibus scelerisque
-          eleifend donec pretium vulputate.
-        </p>
+        <div class="section-content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Adipiscing bibendum est ultricies integer quis auctor elit. Rhoncus
+            dolor purus non enim praesent. Vestibulum lectus mauris ultrices
+            eros in cursus turpis massa. Egestas egestas fringilla phasellus
+            faucibus scelerisque eleifend donec pretium vulputate.
+          </p>
+        </div>
       </section>
       <!-- ************************* WORK SECTION ************************* -->
       <section id="work">
         <h2>Work</h2>
-
-        <div id="work-examples" class="section-content">
-          <!-- EXAMPLE 1 -->
-
-          <a id="first-example">
-            <img
-              src="./assets/images/02-portfolio-4.jpg"
-              alt="Person looking out to surfers on the beach."
-            />
-            <div>
-              <h3>Surf Report</h3>
-              <p>MERN Stack</p>
-            </div>
-          </a>
-
-          <!-- EXAMPLE 2 -->
-          <a class="example">
-            <img
-              src="./assets/images/02-portfolio-1.jpg"
-              alt="Wall of red LEDs."
-            />
-            <div>
-              <h3>LED Wall</h3>
-              <p>Node/IoT</p>
-            </div>
-          </a>
-          <!-- EXAMPLE 3 -->
-          <a class="example">
-            <img
-              src="./assets/images/02-portfolio-2.jpg"
-              alt="Laptop on a desk with a calculator application being developed."
-            />
-            <div>
-              <h3>Calculator</h3>
-              <p>React/JavaScript/CSS</p>
-            </div>
-          </a>
-          <!-- EXAMPLE 4 -->
-          <a class="example">
-            <img
-              src="./assets/images/02-portfolio-3.jpg"
-              alt="Split pink and blue background with a blue toy car in the pink section."
-            />
-            <div>
-              <h3>Pastel Puzzels</h3>
-              <p>MERN Stack</p>
-            </div>
-          </a>
-          <!-- EXAMPLE 5 -->
-          <a class="example example-border">
-            <img
-              src="./assets/images/02-portfolio-5.jpg"
-              alt="Website named 'Run Buddy' with landing page and contact form."
-            />
-            <div>
-              <h3>Run Buddy</h3>
-              <p>HTML/CSS</p>
-            </div>
-          </a>
+        <div class="section-content">
+          <div id="work-examples" class="section-content">
+            <!-- EXAMPLE 1 -->
+            <a id="first-example" href="https://github.com/GormanBrian">
+              <img
+                src="./assets/images/02-portfolio-4.jpg"
+                alt="Person looking out to surfers on the beach."
+              />
+              <div>
+                <h3>Surf Report</h3>
+                <p>MERN Stack</p>
+              </div>
+            </a>
+            <!-- EXAMPLE 2 -->
+            <a class="small-example" href="https://github.com/GormanBrian">
+              <img
+                src="./assets/images/02-portfolio-1.jpg"
+                alt="Wall of red LEDs."
+              />
+              <div>
+                <h3>LED Wall</h3>
+                <p>Node/IoT</p>
+              </div>
+            </a>
+            <!-- EXAMPLE 3 -->
+            <a class="small-example" href="https://github.com/GormanBrian">
+              <img
+                src="./assets/images/02-portfolio-2.jpg"
+                alt="Laptop on a desk with a calculator application being developed."
+              />
+              <div>
+                <h3>Calculator</h3>
+                <p>React/JavaScript/CSS</p>
+              </div>
+            </a>
+            <!-- EXAMPLE 4 -->
+            <a class="small-example" href="https://github.com/GormanBrian">
+              <img
+                src="./assets/images/02-portfolio-3.jpg"
+                alt="Split pink and blue background with a blue toy car in the pink section."
+              />
+              <div>
+                <h3>Pastel Puzzels</h3>
+                <p>MERN Stack</p>
+              </div>
+            </a>
+            <!-- EXAMPLE 5 -->
+            <a class="small-example" href="https://github.com/GormanBrian">
+              <img
+                src="./assets/images/02-portfolio-5.jpg"
+                alt="Website named 'Run Buddy' with landing page and contact form."
+              />
+              <div>
+                <h3>Run Buddy</h3>
+                <p>HTML/CSS</p>
+              </div>
+            </a>
+          </div>
         </div>
       </section>
       <!-- ************************* CONTACT ME SECTION ************************* -->
       <section id="contact-me">
         <h2>Contact<br />Me</h2>
         <ul class="section-content">
-          <li><a href="tel:+1555-555-5555">555.555.5555</a></li>
+          <!-- PHONE NUMBER -->
           <li>
-            <a href="mailto:briangorman99@gmail.com">briangorman99@gmail.com</a>
+            <a class="tertiary-text-color" href="tel:+1555-555-5555"
+              >555.555.5555</a
+            >
           </li>
+          <!-- EMAIL ADDRESS -->
           <li>
-            <a href="https://github.com/GormanBrian" target="_blank">GitHub</a>
+            <a class="tertiary-text-color" href="mailto:briangorman99@gmail.com"
+              >briangorman99@gmail.com</a
+            >
           </li>
+          <!-- GITHUB -->
           <li>
-            <a href="https://twitter.com/username" target="_blank">Twitter</a>
+            <a
+              class="tertiary-text-color"
+              href="https://github.com/GormanBrian"
+              target="_blank"
+              >GitHub</a
+            >
+          </li>
+          <!-- TWITTER -->
+          <li>
+            <a
+              class="tertiary-text-color"
+              href="https://twitter.com/username"
+              target="_blank"
+              >Twitter</a
+            >
           </li>
         </ul>
       </section>
