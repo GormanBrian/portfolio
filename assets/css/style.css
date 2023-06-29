@@ -26,6 +26,7 @@ ul {
 
 ul a {
   flex-basis: auto;
+  border-bottom: 4px solid;
 }
 
 a {
@@ -49,6 +50,7 @@ h1 {
   text-align: right;
   padding: 10px 10px 10px 60px;
   background-color: var(--secondary);
+  color: var(--tertiary);
 }
 
 /* Nav Styles */
@@ -58,10 +60,12 @@ nav > ul {
 }
 
 nav a {
-  padding: 5px 20px;
+  padding: 0.33rem 1rem;
   color: var(--secondary);
   font-weight: bold;
   font-size: 1.5rem;
+  border-color: var(--secondary);
+  margin: 0 10px;
 }
 
 /* Hero Image Styles */
@@ -75,7 +79,7 @@ nav a {
   position: relative;
 }
 
-#hero-image::before {
+/* #hero-image::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -83,12 +87,20 @@ nav a {
   left: 0;
   background-color: var(--primary);
   opacity: 0.35;
+} */
+
+#hero-image img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: auto;
 }
 
 #hero-image h2 {
   position: absolute;
   bottom: 20px;
-  right: 50px;
+  right: 40px;
   padding: 5px 10px;
   font-size: 2rem;
   background-color: var(--secondary);
@@ -117,29 +129,30 @@ section > h2 {
   padding: 5px 2%;
 }
 
-/* TODO: add about me styles */
-
 /* Work Examples Styles */
 
+#work-examples > a {
+  border: 3px solid var(--secondary);
+}
+
 #first-example {
+  flex: 0 0 75%;
 }
 
 #first-example img {
-  width: auto;
+  width: 100%;
+  height: auto;
 }
 
 .example {
   width: 35%;
   height: auto;
+  margin: 0 auto;
 }
 
 .example img {
   width: 100%;
   height: auto;
-}
-
-.example-border {
-  border: 3px solid var(--secondary);
 }
 
 /* Contact Me Styles */
@@ -152,7 +165,7 @@ section > h2 {
 #contact-me a {
   font-weight: bold;
   font-size: 1.7em;
-  border-bottom: 4px solid var(--primary);
+  border-color: var(--primary);
   padding: 4px;
 }
 
