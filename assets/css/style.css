@@ -79,7 +79,7 @@ nav a {
   position: relative;
 }
 
-/* #hero-image::before {
+#hero-image::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -87,7 +87,7 @@ nav a {
   left: 0;
   background-color: var(--primary);
   opacity: 0.35;
-} */
+}
 
 #hero-image img {
   position: absolute;
@@ -126,32 +126,67 @@ section > h2 {
 
 .section-content {
   width: 80%;
-  padding: 5px 2%;
+  padding: 5px 10px;
+}
+
+/* About Me Styles */
+
+#about-me p {
+  margin: 0px 1rem;
 }
 
 /* Work Examples Styles */
 
+#work-examples {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
 #work-examples > a {
-  border: 3px solid var(--secondary);
+  border: 6px solid var(--secondary);
+  position: relative;
+}
+
+#work-examples > a:hover::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background-color: var(--primary);
+  opacity: 0.35;
+}
+
+#work-examples img {
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  right: 0px;
+}
+
+#work-examples div {
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  padding: 5px 10px;
+  background-color: var(--secondary);
 }
 
 #first-example {
-  flex: 0 0 75%;
-}
-
-#first-example img {
-  width: 100%;
+  flex: 0 0 90%;
+  min-width: 90%;
+  max-width: 90%;
   height: auto;
 }
 
 .example {
-  width: 35%;
-  height: 200px;
-  margin: 0 auto;
-}
-
-.example img {
-  width: 100%;
+  flex: 0 0 40%;
+  min-width: 40%;
+  max-width: 40%;
+  margin: 20px auto;
   height: auto;
 }
 
@@ -172,4 +207,42 @@ section > h2 {
 #hero-image h2,
 #contact-me a {
   color: var(--tertiary);
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  ul {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  section > h2 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-evenly;
+  }
+  #contact-me ul {
+    flex-wrap: wrap;
+    gap: 20px;
+    height: auto;
+  }
+
+  .example {
+    flex: 0 0 90%;
+    min-width: 90%;
+    max-width: 90%;
+  }
+
+  section > h2 {
+    font-size: 1.75rem;
+  }
 }
