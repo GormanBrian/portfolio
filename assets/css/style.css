@@ -131,7 +131,9 @@ section > h2 {
 }
 
 .section-content {
-  width: 80%;
+  flex: 0 0 80%;
+  min-width: 80%;
+  max-width: 80%;
   min-height: 100%;
   padding: 5px 0;
   margin: 0 auto;
@@ -243,8 +245,22 @@ section > h2 {
     gap: 1rem;
   }
 
+  section {
+    flex-direction: column;
+  }
+
+  .section-content,
   section > h2 {
-    font-size: 1rem;
+    flex-basis: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 2%;
+  }
+
+  section > h2 {
+    text-align: center;
+    border-right-style: hidden;
+    border-bottom: 3px solid var(--primary);
   }
 }
 
