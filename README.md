@@ -6,7 +6,7 @@ This repo contains the source code for my personal portfolio. The website provid
 
 ## Work
 
-- Surf Report
+- [AFK](https://jlausier.github.io/AFK-Coop/)
 - LED Wall
 - Calculator
 - Pastel Puzzels
